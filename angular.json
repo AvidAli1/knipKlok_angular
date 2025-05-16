@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "knipKlok_angular": {
+    "knipklok-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,41 +13,93 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/knip-klok-angular",
+            "outputPath": "dist/knipklok-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "src/styles.css"
-            ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+                        "src/styles.css",
+                        "src/assets/css/main0dc6.css",
+                        "src/assets/css/main01b0.css",
+                        "src/assets/css/main1eec.css",
+                        "src/assets/css/main2c31.css",
+                        "src/assets/css/main2e78.css",
+                        "src/assets/css/main2f2b.css",
+                        "src/assets/css/main4abd.css",
+                        "src/assets/css/main4d92.css",
+                        "src/assets/css/main4dfd.css",
+                        "src/assets/css/main5bc2.css",
+                        "src/assets/css/main5e3d.css",
+                        "src/assets/css/main6f27.css",
+                        "src/assets/css/main7a07.css",
+                        "src/assets/css/main9db1.css",
+                        "src/assets/css/main18e3.css",
+                        "src/assets/css/main201f.css",
+                        "src/assets/css/main447f.css",
+                        "src/assets/css/main0510.css",
+                        "src/assets/css/main569b.css",
+                        "src/assets/css/main8000.css",
+                        "src/assets/css/main8575.css",
+                        "src/assets/css/main9122.css",
+                        "src/assets/css/maina79c.css",
+                        "src/assets/css/mainaf9a.css",
+                        "src/assets/css/mainb456.css",
+                        "src/assets/css/mainbb7a.css",
+                        "src/assets/css/mainbc7f.css",
+                        "src/assets/css/mainbe56.css",
+                        "src/assets/css/mainbfc8.css",
+                        "src/assets/css/mainc677.css",
+                        "src/assets/css/maind8ed.css",
+                        "src/assets/css/maindb3e.css",
+                        "src/assets/css/mainebab.css",
+                        "src/assets/css/mainff91.css",
+                        "src/assets/css/custom0aa5.css",
+                        "src/assets/css/custom0f3c.css",
+                        "src/assets/css/custom3b4e.css",
+                        "src/assets/css/custom3d81.css",
+                        "src/assets/css/custom4b2c.css",
+                        "src/assets/css/custom7ed4.css",
+                        "src/assets/css/custom8ceb.css",
+                        "src/assets/css/custom21b8.css",
+                        "src/assets/css/custom40c8.css",
+                        "src/assets/css/custom42ae.css",
+                        "src/assets/css/custom51ae.css",
+                        "src/assets/css/custom59e5.css",
+                        "src/assets/css/custom65c0.css",
+                        "src/assets/css/custom455e.css",
+                        "src/assets/css/custom6145.css",
+                        "src/assets/css/custom7957.css",
+                        "src/assets/css/custom8433.css",
+                        "src/assets/css/custom8954.css",
+                        "src/assets/css/custom9746.css",
+                        "src/assets/css/customadba.css",
+                        "src/assets/css/customb2da.css",
+                        "src/assets/css/customc901.css",
+                        "src/assets/css/customce0f.css",
+                        "src/assets/css/customcfa1.css",
+                        "src/assets/css/customda66.css",
+                        "src/assets/css/customdef5.css",
+                        "src/assets/css/custome668.css",
+                        "src/assets/css/customf8cd.css",
+                        "src/assets/css/customf263.css",
+                        "src/assets/css/customfefa.css"
+                      ],
+            "scripts": []
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
                 }
               ],
               "outputHashing": "all"
@@ -64,34 +116,27 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "knipKlok_angular:build:production"
+              "buildTarget": "knipklok-angular:build:production"
             },
             "development": {
-              "buildTarget": "knipKlok_angular:build:development"
+              "buildTarget": "knipklok-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n"
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "knipklok-angular:build"
+          }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
             "scripts": []
           }
         }

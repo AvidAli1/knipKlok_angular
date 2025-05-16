@@ -1,1 +1,130 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+/* Import the original CSS files */
+/* Note: In a real project, you would need to copy the CSS files from the original site */
+/* For now, we'll just add some basic styles */
+@import 'assets/css/mainb26c.css';
+@import 'assets/css/custom2220.css';
+
+/* Additional main CSS files */
+@import 'assets/css/main0dc6.css';
+@import 'assets/css/main01b0.css';
+@import 'assets/css/main1eec.css';
+@import 'assets/css/main2c31.css';
+@import 'assets/css/main2e78.css';
+@import 'assets/css/main2f2b.css';
+@import 'assets/css/main4abd.css';
+@import 'assets/css/main4d92.css';
+@import 'assets/css/main4dfd.css';
+@import 'assets/css/main5bc2.css';
+@import 'assets/css/main5e3d.css';
+@import 'assets/css/main6f27.css';
+@import 'assets/css/main7a07.css';
+@import 'assets/css/main9db1.css';
+@import 'assets/css/main18e3.css';
+@import 'assets/css/main201f.css';
+@import 'assets/css/main447f.css';
+@import 'assets/css/main0510.css';
+@import 'assets/css/main569b.css';
+@import 'assets/css/main8000.css';
+@import 'assets/css/main8575.css';
+@import 'assets/css/main9122.css';
+@import 'assets/css/maina79c.css';
+@import 'assets/css/mainaf9a.css';
+@import 'assets/css/mainb456.css';
+@import 'assets/css/mainbb7a.css';
+@import 'assets/css/mainbc7f.css';
+@import 'assets/css/mainbe56.css';
+@import 'assets/css/mainbfc8.css';
+@import 'assets/css/mainc677.css';
+@import 'assets/css/maind8ed.css';
+@import 'assets/css/maindb3e.css';
+@import 'assets/css/mainebab.css';
+@import 'assets/css/mainff91.css';
+
+/* Additional custom CSS files */
+@import 'assets/css/custom0aa5.css';
+@import 'assets/css/custom0f3c.css';
+@import 'assets/css/custom3b4e.css';
+@import 'assets/css/custom3d81.css';
+@import 'assets/css/custom4b2c.css';
+@import 'assets/css/custom7ed4.css';
+@import 'assets/css/custom8ceb.css';
+@import 'assets/css/custom21b8.css';
+@import 'assets/css/custom40c8.css';
+@import 'assets/css/custom42ae.css';
+@import 'assets/css/custom51ae.css';
+@import 'assets/css/custom59e5.css';
+@import 'assets/css/custom65c0.css';
+@import 'assets/css/custom455e.css';
+@import 'assets/css/custom6145.css';
+@import 'assets/css/custom7957.css';
+@import 'assets/css/custom8433.css';
+@import 'assets/css/custom8954.css';
+@import 'assets/css/custom9746.css';
+@import 'assets/css/customadba.css';
+@import 'assets/css/customb2da.css';
+@import 'assets/css/customc901.css';
+@import 'assets/css/customce0f.css';
+@import 'assets/css/customcfa1.css';
+@import 'assets/css/customda66.css';
+@import 'assets/css/customdef5.css';
+@import 'assets/css/custome668.css';
+@import 'assets/css/customf8cd.css';
+@import 'assets/css/customf263.css';
+@import 'assets/css/customfefa.css';
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  text-align: center;
+}
+
+.btn-green {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #333;
+  color: #333;
+}
+
+/* Add more styles as needed */
